@@ -4,7 +4,7 @@ import * as eva from "@eva-design/eva";
 import { ApplicationProvider, IconRegistry } from "@ui-kitten/components";
 import { EvaIconsPack } from "@ui-kitten/eva-icons";
 
-import NavBar from "./src/components/NavBar";
+import AppNavigator from "./src/AppNavigator";
 
 export default function App(): JSX.Element {
   return (
@@ -12,7 +12,7 @@ export default function App(): JSX.Element {
       <IconRegistry icons={EvaIconsPack} />
       <ApplicationProvider {...eva} theme={eva.dark}>
         <StatusBar style="light" />
-        <NavBar />
+        <AppNavigator />
       </ApplicationProvider>
     </>
   );
