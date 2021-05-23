@@ -31,6 +31,12 @@ export default function NavBar({ navigation, state }: any): JSX.Element {
           <Icon name="person-outline" {...props} />
         )}
       />
+      <BottomNavigationTab
+        title="AJUSTES"
+        icon={(props: any): JSX.Element => (
+          <Icon name="settings-outline" {...props} />
+        )}
+      />
     </BottomNavigation>
   );
 }
